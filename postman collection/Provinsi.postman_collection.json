@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "d8298715-b8d8-48f1-a9b8-534e54c29a1a",
+		"name": "Provinsi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24710775"
+	},
+	"item": [
+		{
+			"name": "Province",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/province",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"province"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Province",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ACEH\",\r\n    \"luas\":\"12.434\",\r\n    \"ibukota\":\"Nanggro Aceh Darussalam\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/province",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"province"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Province Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/province/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"province",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Province",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/province/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"province",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Province",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/province/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"province",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

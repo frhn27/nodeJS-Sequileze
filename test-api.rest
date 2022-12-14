@@ -1,0 +1,13 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/province
+
+###
+GET http://localhost:3000/province/3
+
+###
+POST http://localhost:3000/province
+Content-Type: application/json
+Accept: application/json
