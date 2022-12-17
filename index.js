@@ -69,7 +69,7 @@ app.get('/cities',(req, res) =>{
 
 //get cities by id 
 app.get('/cities/:id',(req, res) =>{
-    let findCities= model.Cities.findOne().then((result)=>{
+    let findCities= model.Cities.findOne({where:{id:req.params.id}).then((result)=>{
         if (result.length < 1){
             res.json({message:'Data Tidak Di Temukan'})
         }
